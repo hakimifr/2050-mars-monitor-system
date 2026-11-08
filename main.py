@@ -42,11 +42,11 @@ def main():
         print("  MARS BASE ECLSS: LIFE SUPPORT & DIAGNOSTIC CONSOLE")
         print("=" * 60)
         print(
-            f" Authentication Status: {'[Recorded: ' + authenticated_user + ']' if authenticated_user else '[BELUM LOG MASUK]'}"
+            f" Authentication Status: {'[Recorded: ' + authenticated_user + ']' if authenticated_user else '[NOT LOGGED IN]'}"
         )
         print("-" * 60)
         print("1. Crew authentication / Astronaut Log-in (Verify ID)")
-        print("2. Check Safety of Atmosphere Habitat (Oksigen)")
+        print("2. Check Safety of Atmosphere Habitat (Oxygen)")
         print("3. Process MOXIE Oxygen (CO2 -> O2)")
         print("4. Synthesise Water & Sabatier Fuel (H2 + CO2 -> H2O)")
         print("5. View Source Inventory & System Log")
@@ -57,7 +57,7 @@ def main():
 
         match choice:
             case "1":
-                print("\n[PENGESAHAN KRU ASTRONAUT]")
+                print("\n[ASTRONAUT CREW VERIFICATION]")
                 user_id = (
                     input("Enter Astronaut's ID (e.g. MARS-007): ").strip().upper()
                 )
