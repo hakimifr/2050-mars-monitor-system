@@ -57,7 +57,7 @@ def main():
 
         match choice:
             case "1":
-                print("\n[PENGESAHAN KRU ASTRONAUT]")
+                print("\n[ASTRONAUT CREW AUTHENTICATION]")
                 user_id = (
                     input("Enter Astronaut's ID (e.g. MARS-007): ").strip().upper()
                 )
@@ -221,7 +221,6 @@ def main():
                 break
 
             case _:
-                # print("❌ Pilihan tidak sah! Sila pilih nombor 1 hingga 6.")
                 print("❌ Invalid choice! Please choose number 1 to 6.")
 
 
